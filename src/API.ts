@@ -96,7 +96,7 @@ export class API implements IAPI {
   constructor(private config: IConfiguration) {
     const axiosOptions = {
       paramsSerializer: querify,
-      timeout: 10 * 60 * 1000, // 10 min
+      timeout: 60 * 60 * 1000, // 1 hour
       withCredentials: false,
     };
 
